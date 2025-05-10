@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Productos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/tabs/products/new">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list *ngIf="products && products.length > 0">
+    <ion-item *ngFor="let product of products" detail>
+      <ion-thumbnail slot="start">
+        <ion-img [src]="product.product_image || 'assets/no-image.png'"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ product.product_name }}</h2>
+        <p>Precio: {{ product.product_price | currency }}</p>
+        <p>Estado: {{ product.product_state || 'Activo' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="!isLoading && (!products || products.length === 0)" class="ion-text-center ion-padding">
+    <ion-icon name="alert-circle-outline" size="large"></ion-icon>
+    <p>No hay productos disponibles</p>
+  </div>
+
+  <ion-spinner *ngIf="isLoading" class="ion-text-center"></ion-spinner>
+</ion-content>

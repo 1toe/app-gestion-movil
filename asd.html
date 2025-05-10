@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Ingeniería de Prompt</title>
+</head>
+<body>
+    <h1>Guía de Ingeniería de Prompt | Prompt Engineering Guide 🚀 Master Prompt Engineering and building AI Agents in our NEW courses!</h1>
+    <p>Use <strong>PROMPTING20</strong> for 20% off ➜ <a href="https://dair-ai.thinkific.com/pages/courses">Enroll now</a></p>
+    <nav>
+        <ul>
+            <li><a href="/es">Prompt Engineering Guide</a></li>
+            <li><a href="/es/about">Acerca de</a></li>
+            <li><a href="https://github.com/dair-ai/Prompt-Engineering-Guide" target="_blank">GitHub</a></li>
+            <li><a href="https://discord.gg/FUyz9vPAwf" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <h2>Contenido</h2>
+    <ul>
+        <li><a href="/es/introduction">Introducción</a>
+            <ul>
+                <li><a href="/es/introduction/settings">Configuración de LLM</a></li>
+                <li><a href="/es/introduction/basics">Conceptos básicos de prompting</a></li>
+                <li><a href="/es/introduction/elements">Elementos de prompting</a></li>
+                <li><a href="/es/introduction/tips">Consejos generales para diseñar prompts</a></li>
+                <li><a href="/es/introduction/examples">Ejemplos de prompts</a></li>
+            </ul>
+        </li>
+        <li><a href="/es/techniques">Técnicas</a>
+            <ul>
+                <li><a href="/es/techniques/zeroshot">Prompt sin entrenamiento previo (Zero-shot)</a></li>
+                <li><a href="/es/techniques/fewshot">Prompt con pocas muestras (Few-shot)</a></li>
+                <li><a href="/es/techniques/cot">Prompt cadena de pensamiento (CoT)</a></li>
+                <li><a href="/es/techniques/consistency">Auto-consistencia</a></li>
+                <li><a href="/es/techniques/knowledge">Prompt de conocimiento generado</a></li>
+                <li><a href="/es/techniques/prompt_chaining">Prompt Chaining</a></li>
+                <li><a href="/es/techniques/tot">Tree of Thoughts</a></li>
+                <li><a href="/es/techniques/rag">Retrieval Augmented Generation</a></li>
+                <li><a href="/es/techniques/art">Automatic Reasoning and Tool-use</a></li>
+                <li><a href="/es/techniques/ape">Ingeniería de prompts automático (APE)</a></li>
+                <li><a href="/es/techniques/activeprompt">Prompt activo</a></li>
+                <li><a href="/es/techniques/dsp">Prompt de Estímulo direccional</a></li>
+                <li><a href="/es/techniques/pal">Program-Aided Language Models</a></li>
+                <li><a href="/es/techniques/react">ReAct</a></li>
+                <li><a href="/es/techniques/reflexion">Reflexion</a></li>
+                <li><a href="/es/techniques/multimodalcot">Prompt CoT multimodal</a></li>
+                <li><a href="/es/techniques/graph">Prompt de grafo</a></li>
+                <li><a href="/es/techniques/meta-prompting">meta-prompting</a></li>
+            </ul>
+        </li>
+        <li><a href="/es/applications">Aplicaciones</a>
+            <ul>
+                <li><a href="/es/applications/generating">Generación de datos</a></li>
+                <li><a href="/es/applications/coding">Generating Code</a></li>
+                <li><a href="/es/applications/workplace_casestudy">Caso de estudio de clasificación de trabajo de graduados</a></li>
+                <li><a href="/es/applications/pf">Prompt Function</a></li>
+                <li><a href="/es/applications/function_calling">Function Calling</a></li>
+                <li><a href="/es/applications/context-caching">context-caching</a></li>
+                <li><a href="/es/applications/finetuning-gpt4o">finetuning-gpt4o</a></li>
+                <li><a href="/es/applications/generating_textbooks">generating_textbooks</a></li>
+                <li><a href="/es/applications/synthetic_rag">synthetic_rag</a></li>
+            </ul>
+        </li>
+        <li><a href="/es/prompts">Prompt Hub</a>
+            <ul>
+                <li><a href="/es/prompts/classification">Classification</a>
+                    <ul>
+                        <li><a href="/es/prompts/classification/sentiment">Sentiment Classification</a></li>
+                        <li><a href="/es/prompts/classification/sentiment-fewshot">Few-Shot Sentiment Classification</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/coding">Coding</a>
+                    <ul>
+                        <li><a href="/es/prompts/coding/code-snippet">Generate Code Snippet</a></li>
+                        <li><a href="/es/prompts/coding/mysql-query">Generate MySQL Query</a></li>
+                        <li><a href="/es/prompts/coding/tikz">Draw TiKZ Diagram</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/creativity">Creativity</a>
+                    <ul>
+                        <li><a href="/es/prompts/creativity/rhymes">Rhymes</a></li>
+                        <li><a href="/es/prompts/creativity/infinite-primes">Infinite Primes</a></li>
+                        <li><a href="/es/prompts/creativity/interdisciplinary">Interdisciplinary</a></li>
+                        <li><a href="/es/prompts/creativity/new-words">Inventing New Words</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/evaluation">Evaluation</a>
+                    <ul>
+                        <li><a href="/es/prompts/evaluation/plato-dialogue">Evaluate Plato's Dialogue</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/information-extraction">Information Extraction</a>
+                    <ul>
+                        <li><a href="/es/prompts/information-extraction/extract-models">Extract Model Names</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/image-generation">Image Generation</a>
+                    <ul>
+                        <li><a href="/es/prompts/image-generation/alphabet-person">Draw a Person Using Alphabet</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/mathematics">Mathematics</a>
+                    <ul>
+                        <li><a href="/es/prompts/mathematics/composite-functions">Evaluating Composite Functions</a></li>
+                        <li><a href="/es/prompts/mathematics/odd-numbers">Adding Odd Numbers</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/question-answering">Question Answering</a>
+                    <ul>
+                        <li><a href="/es/prompts/question-answering/closed-domain">Closed Domain Question Answering</a></li>
+                        <li><a href="/es/prompts/question-answering/open-domain">Open Domain Question Answering</a></li>
+                        <li><a href="/es/prompts/question-answering/science-qa">Science Question Answering</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/reasoning">Reasoning</a>
+                    <ul>
+                        <li><a href="/es/prompts/reasoning/indirect-reasoning">Indirect Reasoning</a></li>
+                        <li><a href="/es/prompts/reasoning/physical-reasoning">Physical Reasoning</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/text-summarization">Text Summarization</a>
+                    <ul>
+                        <li><a href="/es/prompts/text-summarization/explain-concept">Explain A Concept</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/truthfulness">Truthfulness</a>
+                    <ul>
+                        <li><a href="/es/prompts/truthfulness/identify-hallucination">Hallucination Identification</a></li>
+                    </ul>
+                </li>
+                <li><a href="/es/prompts/adversarial-prompting">Adversarial Prompting</a>
+                    <ul>
+                        <li><a href="/es/prompts/adversarial-prompting/prompt-injection">Prompt Injection</a></li>
+                        <li><a href="/es/prompts/adversarial-prompting/prompt-leaking">Prompt Leaking</a></li>
+                        <li><a href="/es/prompts/adversarial-prompting/jailbreaking-llms">Jailbreaking</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/es/models">Modelos</a>
+            <ul>
+                <li><a href="/es/models/flan">Flan</a></li>
+                <li><a href="/es/models/chatgpt">ChatGPT</a></li>
+                <li><a href="/es/models/llama">LLaMA</a></li>
+                <li><a href="/es/models/gpt-4">GPT-4</a></li>
+                <li><a href="/es/models/mistral-7b">Mistral 7B</a></li>
+                <li><a href="/es/models/gemini">Gemini</a></li>
+                <li><a href="/es/models/gemini-advanced">Gemini Advanced</a></li>
+                <li><a href="/es/models/gemini-pro">Gemini 1.5 Pro</a></li>
+                <li><a href="/es/models/phi-2">Phi-2</a></li>
+                <li><a href="/es/models/mixtral">Mixtral</a></li>
+                <li><a href="/es/models/code-llama">Code Llama</a></li>
+                <li><a href="/es/models/olmo">OLMo</a></li>
+                <li><a href="/es/models/sora">Sora</a></li>
+                <li><a href="/es/models/collection">Listado de LLMs</a></li>
+                <li><a href="/es/models/claude-3">claude-3</a></li>
+                <li><a href="/es/models/gemma">gemma</a></li>
+                <li><a href="/es/models/grok-1">grok-1</a></li>
+                <li><a href="/es/models/llama-3">llama-3</a></li>
+                <li><a href="/es/models/mistral-large">mistral-large</a></li>
+                <li><a href="/es/models/mixtral-8x22b">mixtral-8x22b</a></li>
+            </ul>
+        </li>
+        <li><a href="/es/risks">Riesgos y Malos Usos</a>
+            <ul>
+                <li><a href="/es/risks/adversarial">Adversarial Prompting</a></li>
+                <li><a href="/es/risks/factuality">Veracidad</a></li>
+                <li><a href="/es/risks/biases">Sesgos</a></li>
+            </ul>
+        </li>
+        <li><a href="/es/research">LLM Research Findings</a>
+            <ul>
+                <li><a href="/es/research/llm-agents">LLM Agents</a></li>
+                <li><a href="/es/research/rag">RAG for LLMs</a></li>
+                <li><a href="/es/research/trustworthiness-in-llms">Trustworthiness in LLMs</a></li>
+                <li><a href="/es/research/groq">groq</a></li>
+                <li><a href="/es/research/guided-cot">guided-cot</a></li>
+                <li><a href="/es/research/infini-attention">infini-attention</a></li>
+                <li><a href="/es/research/llm-reasoning">llm-reasoning</a></li>
+                <li><a href="/es/research/llm-recall">llm-recall</a></li>
+                <li><a href="/es/research/llm-tokenization">llm-tokenization</a></li>
+                <li><a href="/es/research/rag-faithfulness">rag-faithfulness</a></li>
+                <li><a href="/es/research/rag_hallucinations">rag_hallucinations</a></li>
+                <li><a href="/es/research/synthetic_data">synthetic_data</a></li>
+                <li><a href="/es/research/thoughtsculpt">thoughtsculpt</a></li>
+            </ul>
+        </li>
+        <li><a href="/es/papers">Papers</a></li>
+        <li><a href="/es/tools">Herramientas</a></li>
+        <li><a href="/es/notebooks">Notebooks</a></li>
+        <li><a href="/es/datasets">Datasets</a></li>
+        <li><a href="/es/readings">Lecturas Adicionales</a></li>
+        <li><a href="/es/course">Course</a></li>
+        <li><a href="/es/agents">agents</a>
+            <ul>
+                <li><a href="/es/agents/introduction">Introduction to Agents</a></li>
+                <li><a href="/es/agents/components">Agent Components</a></li>
+            </ul>
+        </li>
+        <li><a href="/es/courses">courses</a></li>
+        <li><a href="/es/guides/optimizing-prompts">guides</a></li>
+    </ul>
+    <footer>
+        <p>Copyright © 2024 DAIR.AI</p>
+    </footer>
+</body>
+</html>

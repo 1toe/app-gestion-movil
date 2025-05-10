@@ -1,0 +1,9 @@
+{
+  "appId": "com.apicrudmanager.app",
+  "appName": "API CRUD Manager",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
